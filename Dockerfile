@@ -1,4 +1,4 @@
-LABEL
+LABEL version="0.1.0" description="A Docker image for Janus WebRTC Gateway, with the janus-telephony-kit plugin (https://github.com/megafarad/janus-telephony-kit)"
 
 FROM ubuntu:latest AS build
 
