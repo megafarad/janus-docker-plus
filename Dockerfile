@@ -1,5 +1,3 @@
-LABEL version="0.1.0" description="A Docker image for Janus WebRTC Gateway, with the janus-telephony-kit plugin (https://github.com/megafarad/janus-telephony-kit)"
-
 FROM ubuntu:latest AS build
 
 RUN apt-get -y update && \
@@ -70,6 +68,7 @@ RUN make
 RUN make install
 
 FROM ubuntu:latest AS runtime
+LABEL version="0.1.0" description="A Docker image for Janus WebRTC Gateway, with the janus-telephony-kit plugin (https://github.com/megafarad/janus-telephony-kit)"
 
 RUN apt-get -y update && \
     apt-get install -y dumb-init \
