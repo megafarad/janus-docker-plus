@@ -1,0 +1,14 @@
+# JetBrains IDEs (IntelliJ IDEA, etc.)
+.idea/
+
+# Docker
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*~
+*.swp
+*.swo
