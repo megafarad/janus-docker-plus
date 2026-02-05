@@ -19,7 +19,7 @@ This Docker image provides a production-ready deployment of Janus Gateway v1.3.3
 ### Pull from Docker Hub
 
 ```bash
-docker pull sirhc77/janus-plus
+docker pull sirhc1977/janus-plus
 ```
 
 
@@ -32,7 +32,7 @@ docker run -d \
   -p 8088:8088 \
   -p 8188:8188 \
   -p 10000-10200:10000-10200/udp \
-  sirhc77/janus-plus
+  sirhc1977/janus-plus
 ```
 
 
@@ -44,7 +44,7 @@ docker run -d \
   -p 8188:8188 \
   -p 10000-10200:10000-10200/udp \
   -e API_SECRET=your-secret-here \
-  sirhc77/janus-plus
+  sirhc1977/janus-plus
 ```
 
 
@@ -85,7 +85,7 @@ version: '3.8'
 
 services:
   janus:
-    image: sirhc77/janus-plus
+    image: sirhc1977/janus-plus
     ports:
       - "8088:8088"
       - "8188:8188"

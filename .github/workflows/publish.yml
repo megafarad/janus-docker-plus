@@ -20,7 +20,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: sirHC77/janus-plus
+          images: sirhc1977/janus-plus
 
       - name: Login to DockerHub
         uses: docker/login-action@v3
