@@ -40,6 +40,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v3
         with:
-          subject-name: index.docker.io/sirhc77/janus-plus
+          subject-name: index.docker.io/sirhc1977/janus-plus
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
